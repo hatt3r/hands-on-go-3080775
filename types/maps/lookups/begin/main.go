@@ -14,7 +14,11 @@ func main() {
 	}
 
 	// read the value for a non-existent key
-	fmt.Println("JR: ", authors["jr"])
+	fmt.Println(": ", authors["jr"])
+
+	a, ok := authors["jr]"]
+	fmt.Printf("a = %v, ok = %v\n",a ,ok)
 
 	// check when a key is present in the map
+	// fmt.Println("tm:", authors["tm"])
 }

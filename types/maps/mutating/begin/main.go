@@ -12,15 +12,15 @@ func main() {
 		"tm": {name: "Toni Morrison"},
 		"ma": {name: "Marcus Aurelius"},
 	}
-	fmt.Printf("%v\n", authors)
+	// fmt.Printf("%v\n", authors)
 
 	// change the value of an author in the map
-
+	authors["tm"] = author{name: "James baldwin"}
 	// print the map
-	// fmt.Printf("%v\n", authors)
+	fmt.Printf("%v\n", authors)
 
 	// delete a key from the map
-
+	delete(authors, "tm")
 	// print the map
-	// fmt.Printf("%v\n", authors)
+	fmt.Printf("%v\n", authors)
 }
